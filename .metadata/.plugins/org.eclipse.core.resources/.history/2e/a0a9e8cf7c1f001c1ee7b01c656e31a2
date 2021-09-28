@@ -1,0 +1,11 @@
+package br.ce.wcaquino.core;
+
+import org.junit.After;
+
+public class BaseTest {
+	
+	@After
+	public void fecha() {
+		DriverFactory.killDriver();
+	}
+}

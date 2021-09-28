@@ -1,0 +1,14 @@
+package br.ce.wcaquino.core;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DriverFactory {
+
+	public static WebDriver driver;
+	
+	private DriverFactory() {
+		System.setProperty("webdriver.chrome.driver", "/Users/nicol/Documents/drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+}

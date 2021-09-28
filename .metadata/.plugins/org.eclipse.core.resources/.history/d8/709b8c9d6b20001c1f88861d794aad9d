@@ -1,0 +1,18 @@
+package br.ce.wcaquino.pages;
+
+import br.ce.wcaquino.core.BasePage;
+
+public class SeuBarrigaPage extends BasePage{
+	
+	public void setEmail(String email) {
+		escreve("email", email);
+	}
+
+	public void setSenha(String senha) {
+		escreve("/html/body/div[2]/form/div[2]/input", senha);
+	}
+	
+	public void entrar() {
+		clicarBotao("/html/body/div[2]/form/div[2]/input");
+	}
+}

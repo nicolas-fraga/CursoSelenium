@@ -1,0 +1,22 @@
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class testeCampoTreinamento2 {	
+	@Test
+	public void alertaSimples() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+		driver.findElement(By.xpath("/html/body/center/center/input[1]")).click();
+		Alert alert = driver.switchTo().alert();
+		Assert.assertEquals("Alert Simples", alert.getText());
+		String textoAlerta = alert.getText(); 
+		alert.accept();
+		driver.findElement(By.xpath("/html/body/center/form/table/tbody/tr[1]/td[2]/input")).sendKeys(textoAlerta);
+		driver.quit();
+
+	}
+}

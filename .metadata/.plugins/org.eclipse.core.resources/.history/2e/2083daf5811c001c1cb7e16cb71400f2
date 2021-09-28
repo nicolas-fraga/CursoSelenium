@@ -1,0 +1,61 @@
+package br.ce.wcaquino.core;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class DSl {
+
+	private WebDriver driver;	
+	
+	public DSl(WebDriver driver) {
+		super();
+		this.driver = driver;
+	}
+
+	public void escreve(String xpathcampo, String texto) {
+		driver.findElement(By.xpath(xpathcampo)).sendKeys(texto);;
+	}
+	
+	public String obterValorCampo(String xpathCampo) {
+		return driver.findElement(By.xpath(xpathCampo)).getAttribute("value");
+	}
+	
+	public void clicarRadio(String xpathCampo) {
+		driver.findElement(By.xpath(xpathCampo)).click();
+	}
+	
+	public Boolean isRadioMarcado(String xpathCampo) {
+		return driver.findElement(By.xpath(xpathCampo)).isSelected();
+	}
+	
+	public void selecionarCombo(String xpathcampo, String valor) {
+		WebElement element = driver.findElement(By.xpath(xpathcampo));
+		Select combo = new Select(element);
+		combo.selectByVisibleText(valor);
+	}
+	
+	public String obterValorCombo(String xpathcampo) {
+		WebElement element = driver.findElement(By.xpath(xpathcampo));
+		Select combo = new Select(element);
+		return combo.getFirstSelectedOption().getText();
+		
+	}
+	
+	public void clicarBotao(String xpathcampo) {
+		driver.findElement(By.xpath(xpathcampo)).click();
+	}
+	
+	public void clicarLink(String xpath) {
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public String obterTexto(By by) {
+		return driver.findElement(by).getText();
+	}
+ 
+	public String obterTexto(String xpathcampo) {
+		return obterTexto(xpathcampo);
+	}
+	
+	}
