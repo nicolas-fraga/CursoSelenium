@@ -52,4 +52,5 @@
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="br.ce.wcaquino.pages.SeuBarrigaPage"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
+    <fullyQualifiedTypeName name="java.security.spec.ECField"/>
 </qualifiedTypeNameHistroy>

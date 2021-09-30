@@ -45,12 +45,8 @@ public class BasePage {
 		getDriver().findElement(By.xpath(xpath)).click();
 	}
 	
-	public String obterTexto(By by) {
-		return getDriver().findElement(by).getText();
-	}
- 
 	public String obterTexto(String xpathcampo) {
-		return obterTexto(xpathcampo);
+		return getDriver().findElement(By.xpath(xpathcampo)).getText();
 	}
 
 }

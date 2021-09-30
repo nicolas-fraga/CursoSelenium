@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.opera.OperaDriver;
 
 public class DriverFactory {
 
@@ -17,9 +18,9 @@ public class DriverFactory {
 				case CHROME: System.setProperty("webdriver.chrome.driver", "/CursoSelenium/ProjetoBasico/target/drivers/chromedriver.exe"); 
 				driver = new ChromeDriver();
 				break;
-//				case OPERA:System.setProperty("webdriver.opera.driver", "/Users/nicol/Documents/drivers/operadriver.exe");
-//				driver = new OperaDriver();
-				
+				case OPERA:System.setProperty("webdriver.opera.driver", "/CursoSelenium/ProjetoBasico/target/drivers/operadriver.exe");
+				driver = new OperaDriver();
+				break;
 			}
 		}
 		return driver;
