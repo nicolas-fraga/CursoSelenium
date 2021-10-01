@@ -15,7 +15,7 @@ public class DriverFactory {
 	public static WebDriver getDriver() {
 		if(driver == null) {
 			switch (Propriedades.browser) {
-				case CHROME: System.setProperty("webdriver.chrome.driver", "/CursoSelenium/ProjetoBasico/target/drivers/chromedriver.exe"); 
+				case CHROME: System.setProperty("webdriver.chrome.driver", "/CursoSelenium/ProjetoBasico/src/drivers/chromedriver.exe"); 
 				driver = new ChromeDriver();
 				break;
 				case OPERA:System.setProperty("webdriver.opera.driver", "/CursoSelenium/ProjetoBasico/target/drivers/operadriver.exe");

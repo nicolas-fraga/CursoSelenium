@@ -6,7 +6,6 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.Dimension"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.Driver"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.Select"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.Options"/>
@@ -20,7 +19,6 @@
     <fullyQualifiedTypeName name="org.junit.Assert"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="junit.framework.TestFailure"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="CampoTreinamentoPage"/>
     <fullyQualifiedTypeName name="junit.framework.Assert"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
@@ -51,6 +49,9 @@
     <fullyQualifiedTypeName name="br.ce.wcaquino.core.DriverFactory"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="br.ce.wcaquino.pages.SeuBarrigaPage"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
     <fullyQualifiedTypeName name="java.security.spec.ECField"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
 </qualifiedTypeNameHistroy>

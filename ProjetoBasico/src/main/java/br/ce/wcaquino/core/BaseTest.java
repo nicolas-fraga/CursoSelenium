@@ -23,12 +23,12 @@ public class BaseTest {
 		getDriver().get("http://seubarriga.wcaquino.me/login");
 	}
 	
-	@After
-	public void fecha() throws IOException {
-		TakesScreenshot ss = (TakesScreenshot) getDriver();
-		File arquivo = ss.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(arquivo, new File("target" + File.separator + "screenshot" + File.separator + testName.getMethodName() + ".jpg"));
-		
-		DriverFactory.killDriver();
-	}
+//	@After
+//	public void fecha() throws IOException {
+//		TakesScreenshot ss = (TakesScreenshot) getDriver();
+//		File arquivo = ss.getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(arquivo, new File("target" + File.separator + "screenshot" + File.separator + testName.getMethodName() + ".jpg"));
+//		
+//		DriverFactory.killDriver();
+//	}
 }

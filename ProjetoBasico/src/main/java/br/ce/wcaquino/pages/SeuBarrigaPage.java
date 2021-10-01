@@ -100,6 +100,9 @@ public class SeuBarrigaPage extends BasePage{
 	
 	public void removeMovimentacao() {
 		clicarBotao("/html/body/nav/div/div[2]/ul/li[4]/a");
+		clicarBotao("/html/body/div[2]/form/div[1]");
+		clicarBotao("/html/body/div[2]/form/div[1]/select/option[9]");
+		clicarBotao("/html/body/div[2]/form/input");
 		clicarBotao("/html/body/div[2]/table/tbody/tr/td[6]/a/span");
 	}
 	
